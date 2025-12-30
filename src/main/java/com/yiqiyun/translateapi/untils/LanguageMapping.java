@@ -201,7 +201,7 @@ public class LanguageMapping {
     public static String getGoogleLang(String targetLang) {
         // 将 targetLang 转换为小写
         String langKey = targetLang.toLowerCase();
-        return GOOGLE_LANG_MAP.getOrDefault(langKey, "en");
+        return GOOGLE_LANG_MAP.getOrDefault(langKey, "zh");
     }
 
     /**
@@ -213,7 +213,7 @@ public class LanguageMapping {
     public static String getBingLang(String targetLang) {
         // 将 targetLang 转换为小写
         String langKey = targetLang.toLowerCase();
-        return BING_LANG_MAP.getOrDefault(langKey, "en");
+        return BING_LANG_MAP.getOrDefault(langKey, "zh");
     }
 }
 
