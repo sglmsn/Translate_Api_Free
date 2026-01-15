@@ -199,6 +199,9 @@ public class LanguageMapping {
      * @return Google API 使用的语言代码
      */
     public static String getGoogleLang(String targetLang) {
+        if (targetLang == null) {
+            targetLang = "zh";
+        }
         // 将 targetLang 转换为小写
         String langKey = targetLang.toLowerCase();
         return GOOGLE_LANG_MAP.getOrDefault(langKey, "en");
