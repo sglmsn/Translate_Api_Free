@@ -214,6 +214,9 @@ public class LanguageMapping {
      * @return Bing API 使用的语言代码
      */
     public static String getBingLang(String targetLang) {
+        if (targetLang == null) {
+            targetLang = "zh";
+        }
         // 将 targetLang 转换为小写
         String langKey = targetLang.toLowerCase();
         return BING_LANG_MAP.getOrDefault(langKey, "zh");
